@@ -15,7 +15,7 @@ module Inflections
     inflect.plural(/ú([sn])$/i, 'u\1es')
 
     inflect.singular(/s$/, '')
-    inflect.singular(/([nr])es$/, '\1')
+    inflect.singular(/([^dt])es$/, '\1')
 
     inflect.irregular('el', 'los')
   end
